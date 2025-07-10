@@ -8,9 +8,9 @@ It allows users to authenticate and manage items through protected endpoints.
 
 1. [Prerequisites](#prerequisites)
 2. [Setup Instructions](#setup-instructions)
-3. [Running the Application in Visual Studio 2022](#running-the-application-in-visual-studio-2022)
-4. [API Testing with Swagger](#api-testing-with-swagger)
-5. [Database Configuration](#database-configuration)
+3. [Database Configuration](#database-configuration)
+4. [Running the Application in Visual Studio 2022](#running-the-application-in-visual-studio-2022)
+5. [API Testing with Swagger](#api-testing-with-swagger)
 6. [API Endpoints](#api-endpoints)
 
 ## Prerequisites
@@ -45,41 +45,6 @@ Ensure you have the following installed:
    "Credentials_Username": "admin",
    "Credentials_Password": "@dm!n123"
    ```
-
-## Running the Application in Visual Studio 2022
-
-1. Open the solution file `VertexTestApi.sln` in Visual Studio 2022.
-
-2. In **Solution Explorer**, right-click on `VertexTestApi` and select **Set as Startup Project**.
-
-3. Press `Ctrl + F5` or click the green **Start Without Debugging** button to run the application.
-
-4. The app should launch in your browser, and the Swagger UI will be available at:
-
-   ```
-   https://localhost:5001/swagger
-   ```
-
-## API Testing with Swagger
-
-1. Navigate to `/swagger` after the app starts.
-
-2. Use the `/api/Auth/login` endpoint to get a JWT token.  Credentials:
-
-   ```json
-   {
-     "username": "admin",
-     "password": "@dm!n123"
-   }
-   ```
-
-3. Copy the token returned.
-
-4. Click the **Authorize** button in Swagger UI and paste the token.
-
-5. You can now access the secured endpoints.
-
-
 ## Database Configuration
 
 Use the following SQL script in **MySQL Workbench** or your preferred SQL client:
@@ -128,6 +93,41 @@ INSERT INTO items (name, description) VALUES
   ('Microphone', 'Shure MV7 USB/XLR'),
   ('Backpack', 'Peak Design Everyday Backpack 30L');
 ```
+
+## Running the Application in Visual Studio 2022
+
+1. Open the solution file `VertexTestApi.sln` in Visual Studio 2022.
+
+2. In **Solution Explorer**, right-click on `VertexTestApi` and select **Set as Startup Project**.
+
+3. Press `Ctrl + F5` or click the green **Start Without Debugging** button to run the application.
+
+4. The app should launch in your browser, and the Swagger UI will be available at:
+
+   ```
+   https://localhost:5001/swagger
+   ```
+
+## API Testing with Swagger
+
+1. Navigate to `/swagger` after the app starts.
+
+2. Use the `/api/Auth/login` endpoint to get a JWT token.  Credentials:
+
+   ```json
+   {
+     "username": "admin",
+     "password": "@dm!n123"
+   }
+   ```
+
+3. Copy the token returned.
+
+4. Click the **Authorize** button in Swagger UI and paste the token.
+
+5. You can now access the secured endpoints.
+
+
 
 ## API Endpoints
 
