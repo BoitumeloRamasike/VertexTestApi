@@ -47,7 +47,7 @@ Ensure you have the following installed:
    ```
 ## Database Configuration
 
-Use the following SQL script in **MySQL Workbench** or your preferred SQL client:
+Use the following SQL script in **MySQL Workbench**:
 
 ```sql
 -- Create the database
