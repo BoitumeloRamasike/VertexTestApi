@@ -50,11 +50,11 @@ Ensure you have the following installed:
 Use the following SQL script in **MySQL Workbench**:
 
 ```sql
--- Create the database
+--To create the database
 CREATE DATABASE IF NOT EXISTS vertex_test;
 USE vertex_test;
 
--- Create items table
+--To create items table
 CREATE TABLE items (
   id INT AUTO_INCREMENT PRIMARY KEY,
   name VARCHAR(100) NOT NULL,
@@ -62,14 +62,14 @@ CREATE TABLE items (
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Stored procedure: Get all items
+--Stored procedure: To get all items
 DELIMITER $$
 CREATE PROCEDURE sp_get_items()
 BEGIN
   SELECT * FROM items;
 END$$
 
--- Stored procedure: Add new item
+--Stored procedure: To add new item
 CREATE PROCEDURE sp_add_item(
   IN p_name VARCHAR(100),
   IN p_description TEXT
@@ -80,7 +80,7 @@ BEGIN
 END$$
 DELIMITER ;
 
--- sample data
+--Sample data
 INSERT INTO items (name, description) VALUES
   ('Tablet', 'iPad Pro 12.9" with Apple Pencil'),
   ('Smartwatch', 'Apple Watch Series 9'),
