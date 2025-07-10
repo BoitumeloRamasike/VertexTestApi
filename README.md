@@ -34,7 +34,7 @@ Ensure you have the following installed:
 
    ```json
    "ConnectionStrings": {
-     "MySQLConnection": "server=localhost;database=vertex_test;user=test;password=Vert3xt3$T!"
+     "MySQLConnection": "server=localhost;database=provided;user=test;password=provided!"
    }
    ```
 
@@ -42,8 +42,8 @@ Ensure you have the following installed:
 
    ```json
    "Jwt_Key": "super secrete unguessable key super secrete unguessable key super secrete unguessable key",
-   "Credentials_Username": "admin",
-   "Credentials_Password": "@dm!n123"
+   "Credentials_Username": "provided",
+   "Credentials_Password": "provided"
    ```
 ## Database Configuration
 
