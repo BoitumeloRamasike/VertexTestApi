@@ -30,8 +30,7 @@ Ensure you have the following installed:
 
 2. **Configure the database connection:**
 
-   Open `appsettings.json` and make sure the MySQL connection string looks like as follows:
-
+   Open `appsettings.json` and make sure the useranmes and passwords:
    ```json
    "ConnectionStrings": {
      "MySQLConnection": "server=localhost;database=provided;user=test;password=provided!"
